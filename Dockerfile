@@ -15,4 +15,7 @@ RUN apk update && \
   chmod a+x /usr/local/bin/consul-template && \
   apk del curl
 
+RUN mkdir /rendered
+VOLUME /rendered
+
 ENTRYPOINT ["/usr/local/bin/consul-template"]
