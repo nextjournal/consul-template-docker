@@ -7,5 +7,5 @@ We run Haproxy using `docker-compose`. To restart Haproxy when its bind-mounted 
 ## Usage
 
 ```
-docker run nextjournal/consul-template-docker -f....
+docker run nextjournal/consul-template-docker -config /etc/config/consul.hcl
 ```
