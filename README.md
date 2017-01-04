@@ -9,3 +9,5 @@ We run Haproxy using `docker-compose`. To restart Haproxy when its bind-mounted 
 ```
 docker run nextjournal/consul-template-docker -config /etc/config/consul.hcl
 ```
+
+A shared volume is available at `/rendered` for writing out templates used by other containers.
